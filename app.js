@@ -31,7 +31,7 @@ app.get("/blogs", function(req, res){
        if (err){
            console.log("Error!");
        } else {
-           res.render("index", blogs: blogs);
+           res.render("index", {blogs: blogs});
        }
    });
 });
