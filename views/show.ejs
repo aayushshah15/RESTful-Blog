@@ -1,5 +1,5 @@
 <% include ./partials/header %>
-<div class="ui main text container segment">
+<div class="ui main text container">
     <div class="ui huge header">
         <%= blog.title %>
     </div>
@@ -9,8 +9,12 @@
             <div class="content">
                 <span> <%=blog.created.toDateString()%> </span>
             </div>
+            <div class="description">
+                <p><%- blog.body %></p>
+            </div>
         </div>
     </div>
+    
 </div>
 
 <% include ./partials/footer %>>
